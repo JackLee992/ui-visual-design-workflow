@@ -8,6 +8,8 @@ Standalone Codex skill repository for `ui-visual-design-workflow`.
 - `agents/openai.yaml`: Agent prompt wiring for this skill.
 - `references/source-map.md`: Source map and reusable guidance.
 - `references/visual-checklists.md`: Visual QA checklist.
+- `references/game-image-generation-samples.md`: Game image generation sample prompts and QA notes.
+- `assets/samples/`: Sample generated images used by the game image prompt examples.
 
 ## Usage
 

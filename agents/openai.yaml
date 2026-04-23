@@ -1,4 +1,4 @@
 interface:
   display_name: "UI Visual Design Workflow"
   short_description: "Guide beginner visual designers"
-  default_prompt: "Use $ui-visual-design-workflow with $imagegen when bitmap output is needed to turn this visual design request into a brief, art direction, generated image, and QA checklist."
+  default_prompt: "Use $ui-visual-design-workflow in lightweight mode by default. Use $imagegen only when final bitmap output is explicitly requested."
