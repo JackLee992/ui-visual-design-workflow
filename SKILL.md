@@ -17,6 +17,7 @@ description: Use when Codex helps beginner designers plan, create, or review UI 
 - **海报/社交图**：活动海报、广告、banner、封面、缩略图、公告图。
 - **小红书图文**：封面、轮播、生活方式攻略、购物种草、教程、对比笔记。
 - **游戏 CG/key art**：splash art、Steam capsule、loading art、角色或场景主视觉。
+- **影视风格图片**：真人剧照、影视宣传照、短剧/影游质感封面、角色定妆照。
 - **AI 出图指导**：prompt、moodboard、风格探索、位图生成。
 - **视觉诊断/改稿**：审查已有设计图或图片。
 
@@ -86,5 +87,6 @@ description: Use when Codex helps beginner designers plan, create, or review UI 
 - 需要来源依据、平台核验或引用时，且任务进入联网核验模式，读取 `references/source-map.md`。
 - 需要按媒介执行或诊断时，读取 `references/visual-checklists.md`。
 - 需要游戏图片类型生成示例、成品出图 prompt 模板或测试样张时，读取 `references/game-image-generation-samples.md`。
+- 需要影视风格图片、真人剧照、短剧/影游质感宣传照示例或测试样张时，读取 `references/film-image-generation-samples.md`。
 - 用户明确要生成或编辑最终位图成品时，必须同时使用 `$imagegen`，并优先调用内置 `image_gen` 工具。
 - 用户要创建或更新 Figma 文件时，先使用对应 Figma 技能，再调用 Figma 工具。
