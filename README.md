@@ -10,7 +10,7 @@ Standalone Codex skill repository for `ui-visual-design-workflow`.
 - `references/visual-checklists.md`: Visual QA checklist.
 - `references/game-image-generation-samples.md`: Game image generation sample prompts and QA notes.
 - `references/film-image-generation-samples.md`: Live-action film still and drama-promo sample prompts and QA notes.
-- `assets/samples/`: Sample generated images used by the prompt examples.
+- `assets/samples/`: Sample generated images and prompt sidecars used by the prompt examples.
 
 ## Usage
 
