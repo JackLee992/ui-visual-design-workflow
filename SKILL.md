@@ -86,6 +86,7 @@ description: Use when Codex helps beginner designers plan, create, or review UI 
 
 - 需要来源依据、平台核验或引用时，且任务进入联网核验模式，读取 `references/source-map.md`。
 - 需要按媒介执行或诊断时，读取 `references/visual-checklists.md`。
+- 需要更稳定的 GPT-Image/GPT-Image-2 出图提示词、变体策略、复现样张、UI mockup、海报、人像、角色表或信息图 prompt 时，读取 `references/gpt-image-prompt-patterns.md`。
 - 需要游戏图片类型生成示例、成品出图 prompt 模板或测试样张时，读取 `references/game-image-generation-samples.md`。
 - 需要影视风格图片、真人剧照、短剧/影游质感宣传照示例或测试样张时，读取 `references/film-image-generation-samples.md`。
 - 用户明确要生成或编辑最终位图成品时，必须同时使用 `$imagegen`，并优先调用内置 `image_gen` 工具。

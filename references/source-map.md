@@ -46,3 +46,6 @@
 
 - Text-to-image prompt 研究指出，结构化加入 subject 与 style 关键词能减少盲目试错并提高结果稳定性。生产使用时，还应补充构图、镜头、光线、色板、材质、平台裁切和负面约束。
   来源：https://arxiv.org/abs/2109.06977
+
+- EvoLinkAI/awesome-gpt-image-2-prompts 是 GPT-Image-2 社区提示词与样例集合，按人像摄影、海报插画、角色设计、UI/社交 mockup、社区实验等场景组织。适合提炼提示词结构、媒介语言、比例/裁切、主体一致性、文字策略和复现侧车等方法论；不要直接复制单个创作者案例或可识别角色/海报。
+  来源：https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts, https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-prompts/main/data/ingested_tweets.json
