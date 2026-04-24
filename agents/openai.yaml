@@ -1,4 +1,4 @@
 interface:
   display_name: "UI Visual Design Workflow"
   short_description: "Guide beginner visual designers"
-  default_prompt: "Use $ui-visual-design-workflow in lightweight mode by default. Use $imagegen only when final bitmap output is explicitly requested."
+  default_prompt: "Use $ui-visual-design-workflow in lightweight mode by default. Do not call $imagegen unless the user explicitly enters '成品出图模式' or gives an equally direct final-image instruction."

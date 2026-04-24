@@ -53,7 +53,7 @@
 
 ## AI 出图 Prompt Pack
 
-如果用户明确要最终图片或图片变体，prompt pack 才是出图前的准备步骤；准备完成后转入 `$imagegen`，用内置 `image_gen` 生成或编辑位图。否则 prompt pack 本身就是可交付产物，不自动出图。
+只有用户明确写出“成品出图模式”，或给出等价直白指令来生成最终图片或图片变体，prompt pack 才是出图前的准备步骤；准备完成后转入 `$imagegen`，用内置 `image_gen` 生成或编辑位图。请求含糊时默认不出图，prompt pack 本身就是可交付产物。
 
 需要更稳定的 GPT-Image/GPT-Image-2 提示词、变体策略或复现样张时，同时读取 `references/gpt-image-prompt-patterns.md`。
 

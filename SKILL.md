@@ -27,7 +27,14 @@ description: Use when Codex helps beginner designers plan, create, or review UI 
 
 - **轻量模式（默认）**：不联网、不调用 imagegen；只读取本技能和必要检查表，交付设计简报、设计策略、规格、prompt 或 QA。
 - **联网核验**：仅当用户要求最新平台规则、尺寸、政策、审核限制、店铺素材规则，或明确说“查一下/联网确认”时使用。优先官方平台文档、设计系统文档、可访问性标准、成熟 UX 研究；通常 1-3 个高可信来源足够。
-- **成品出图**：仅当用户明确要生成或编辑最终位图成品、图片变体、封面图、海报图、CG、key art、产品图或 UI mockup 位图时，同时使用 `$imagegen` 和内置 `image_gen`。如果用户说“只要提示词/方案/规范/先别出图”，禁止调用 imagegen。
+- **成品出图**：仅当用户明确写出要生成或编辑最终位图成品，或直接给出等价直白指令，如“成品出图模式”“直接出图”“现在生成图片”“请调用 imagegen 生成最终图”时，同时使用 `$imagegen` 和内置 `image_gen`。如果用户说“只要提示词/方案/规范/先别出图”，或只是讨论风格、样例、图片类型、参考方向、prompt、moodboard，一律禁止调用 imagegen。
+
+### 出图硬门槛
+
+- 没有明确的最终成品出图授权时，默认停在轻量模式。
+- “测试一下”“看看效果”“按这个风格来”“给我几个方向”“做个示例”“生成 prompt”都不自动视为出图授权。
+- 请求含糊时，先交付简报、规格、prompt pack 或 QA，不自动补做图片。
+- 只有用户明确说出要生成最终图片，或明确写出“成品出图模式”这类强触发词时，才能进入出图流程。
 
 ## 工作流程
 
@@ -68,7 +75,7 @@ description: Use when Codex helps beginner designers plan, create, or review UI 
    - QA 检查表。
 
 7. **关联 imagegen 出图**
-   仅在成品出图模式下使用 `$imagegen`，并通过内置 `image_gen` 工具生成或编辑图片。不要因为用户提到 UI、海报、prompt、moodboard 或视觉风格就自动出图；这些请求默认先交付方案、规格、prompt pack 或 QA。出图前先用本技能产出清晰美术指导稿；出图后按本技能的 QA 检查表复查焦点、层级、文字、裁切和平台适配。
+   仅在用户明确进入成品出图模式时使用 `$imagegen`，并通过内置 `image_gen` 工具生成或编辑图片。不要因为用户提到 UI、海报、prompt、moodboard、风格参考、样例测试或图片类型就自动出图；这些请求默认先交付方案、规格、prompt pack 或 QA。出图前先用本技能产出清晰美术指导稿；出图后按本技能的 QA 检查表复查焦点、层级、文字、裁切和平台适配。
 
 8. **自检改稿**
    对每项打 0-2 分：焦点清晰、层级清晰、可读性、可访问性、平台适配、品牌适配、可交付性。任何 0 分项必须先修改，再声称完成。
@@ -89,5 +96,5 @@ description: Use when Codex helps beginner designers plan, create, or review UI 
 - 需要更稳定的 GPT-Image/GPT-Image-2 出图提示词、变体策略、复现样张、UI mockup、海报、人像、角色表或信息图 prompt 时，读取 `references/gpt-image-prompt-patterns.md`。
 - 需要游戏图片类型生成示例、成品出图 prompt 模板或测试样张时，读取 `references/game-image-generation-samples.md`。
 - 需要影视风格图片、真人剧照、短剧/影游质感宣传照示例或测试样张时，读取 `references/film-image-generation-samples.md`。
-- 用户明确要生成或编辑最终位图成品时，必须同时使用 `$imagegen`，并优先调用内置 `image_gen` 工具。
+- 用户明确进入成品出图模式，或明确要求生成/编辑最终位图成品时，必须同时使用 `$imagegen`，并优先调用内置 `image_gen` 工具。
 - 用户要创建或更新 Figma 文件时，先使用对应 Figma 技能，再调用 Figma 工具。
